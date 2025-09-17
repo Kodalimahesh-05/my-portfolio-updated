@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #f5f5f7 0%, #e0eafc 100%);
+            background-size: 200% 200%;
+            animation: gradientMove 8s ease-in-out infinite;
+            color: #1d1d1f;
+        }
+
+        @keyframes gradientMove {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        .hero-section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .profile-pic {
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+        }
+
+        .contact-btn {
+            margin-right: 10px;
+        }
+
+        .skills-btns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: transparent;
+            color: #0071e3;
+            border: 2px solid #e5e5ea;
+            border-radius: 22px;
+            padding: 10px 28px;
+            font-size: 1.05rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s, border 0.2s, transform 0.2s;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+
+        .skill-btn i {
+            font-size: 1.2em;
+            transition: color 0.2s;
+        }
+
+        .skill-btn:hover {
+            background: #e5e5ea;
+            color: #0071e3;
+            border-color: #0071e3;
+            transform: scale(1.06);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='about.html'">About</button>
+            <button onclick="location.href='projects.html'">Projects</button>
+            <button onclick="location.href='contact.html'">Contact</button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section tint-section">
+            <img src="IMG_6346.jpeg" alt="Profile Picture" class="profile-pic">
+            <div>
+                <h2 style="font-size:2.2rem; font-weight:700; margin-bottom:10px;">
+                    <span class="wave">👋</span> Hi, I'm Mahesh!
+                </h2>
+                <p style="font-size:1.2rem; margin-bottom:18px;">
+                    Microsoft Learn Student Ambassador<br>
+                    Game Developer & Web Enthusiast
+                </p>
+                <div>
+                    <a class="contact-btn" href="mailto:kodalidurgamahesh5@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a class="contact-btn" href="https://www.linkedin.com/in/kodali-mahesh-a31689338" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="contact-btn" href="https://instagram.com/mahesh_kodali" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="contact-btn" href="tel:9515245646"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="tint-section">
+            <h2>About Me</h2>
+            <p>
+                <strong>Kodali Mahesh</strong><br>
+                Student at Gudlavalleru Engineering College<br>
+                Gudivada, Andhra Pradesh, India
+            </p>
+            <h3>Summary</h3>
+            <p>
+                As a passionate engineering student at Gudlavalleru Engineering College (2024-2028), I am eager to explore the world of technology, design, and communication. My journey as a Microsoft Learn Student Ambassador has strengthened my skills in GitHub, collaboration, and problem-solving, while also fueling my enthusiasm for learning and sharing knowledge.<br><br>
+                With a keen interest in software development, innovation, and game development, I enjoy working on projects that challenge me to think creatively and apply my technical skills effectively. My strengths in training, communication, and design help me connect with peers, contribute to open-source communities, and drive impactful initiatives.<br><br>
+                I am always open to new opportunities, collaborations, and learning experiences. Let’s connect and grow together!
+            </p>
+            <h3>Education</h3>
+            <p>
+                Gudlavalleru Engineering College, Seshadri Rao Knowledge Village,<br>
+                Gudlavalleru, PIN-521356 (CC-48)<br>
+                Bachelor's degree, Computer Science · (September 2024)
+            </p>
+        </section>
+        <section class="tint-section">
+            <h2>My Projects</h2>
+            <p>Here you can find some of the projects I have worked on.</p>
+        </section>
+        <section class="tint-section">
+            <h2>Skills</h2>
+            <div class="skills-btns">
+                <span class="skill-btn"><i class="fas fa-code"></i> C (Programming Language)</span>
+                <span class="skill-btn"><i class="fas fa-laptop-code"></i> Web Design</span>
+                <span class="skill-btn"><i class="fas fa-mobile-alt"></i> Responsive Web Design</span>
+                <span class="skill-btn"><i class="fas fa-gamepad"></i> Game Designing</span>
+                <span class="skill-btn"><i class="fab fa-github"></i> GitHub Collaboration</span>
+                <span class="skill-btn"><i class="fas fa-cogs"></i> Software Development</span>
+                <span class="skill-btn"><i class="fas fa-users"></i> Communication & Training</span>
+            </div>
+        </section>
+        <section class="tint-section">
+            <h2>Certifications</h2>
+            <div class="skills-btns">
+                <span class="skill-btn"><i class="fas fa-user-graduate"></i> Microsoft Learn Student Ambassador</span>
+                <span class="skill-btn"><i class="fab fa-github"></i> Build And Deploy Web Applications Using GitHub</span>
+                <span class="skill-btn"><i class="fas fa-code"></i> C language</span>
+                <span class="skill-btn"><i class="fas fa-gamepad"></i> Unity Certified Associate Game Developer Fundamentals</span>
+                <span class="skill-btn"><i class="fas fa-palette"></i> Unity Certified Associate Game Developer UI and 2D Games</span>
+            </div>
+        </section>
+        <section class="tint-section contact-lineup">
+            <h2>Follow Me</h2>
+            <div>
+                <a class="contact-btn" href="mailto:kodalidurgamahesh5@gmail.com">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a class="contact-btn" href="https://www.linkedin.com/in/kodali-mahesh-a31689338" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a class="contact-btn" href="https://instagram.com/mahesh_kodali" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a class="contact-btn" href="tel:9515245646">
+                    <i class="fas fa-phone"></i> Phone
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mahesh. All rights reserved.<br>
+        <span style="font-size:1.05rem; color:#0071e3;">Building, learning, and connecting every day.</span></p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

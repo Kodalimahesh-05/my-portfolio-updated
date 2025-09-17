@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='about.html'">About</button>
+            <button onclick="location.href='projects.html'">Projects</button>
+            <button onclick="location.href='contact.html'">Contact</button>
+        </nav>
+    </header>
+    <main>
+        <section class="tint-section">
+            <h2>Contact Information</h2>
+            <div style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start;">
+                <span>
+                    <strong>Email:</strong>
+                    <a class="contact-btn" href="mailto:kodalidurgamahesh5@gmail.com">kodalidurgamahesh5@gmail.com</a>
+                </span>
+                <span>
+                    <strong>LinkedIn:</strong>
+                    <a class="contact-btn" href="https://www.linkedin.com/in/kodali-mahesh-a31689338" target="_blank">Kodali Mahesh</a>
+                </span>
+                <span>
+                    <strong>Instagram:</strong>
+                    <a class="contact-btn" href="https://instagram.com/mahesh_kodali" target="_blank">@mahesh_kodali</a>
+                </span>
+            </div>
+        </section>
+        <section class="tint-section">
+            <h2>Send a Message</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+                <button type="button" onclick="history.back()">Go Back</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Thank you for visiting my portfolio website!</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
